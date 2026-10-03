@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kids Studio</title>
+    <style>
+     .hero {
+    min-height: 520px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 70px;
+    background-color: #fff0e6;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+    flex-wrap: wrap;
+}
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.hero-image img {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 25px;
+ 
+        *{
+            box-sizing:border-box;
+        }
+     } body{
+            margin:0;
+            font-family: Arial, sans-serif;
+            background-color:#fffaf5;
+            color:#333333;
+        }
+        header{
+            background-color:#ff7f50;;
+            padding:20px 60px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            flex-wrap: wrap;
+        }
+        header h1{
+            margin:0;
+            color:white;
+            font-size:32px;
+        }
+        nav{
+            display:flex;
+            gap:25px;
+            flex-wrap: wrap;
+        }
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+        nav a:hover{
+            color:#fff3b0;
+        }
+        
+.welcome-text{
+    color:#ff7f50;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+.hero h2{
+    font-size:48px;
+    max-width: 750px;
+    margin:10px auto 20px;
+    color:#333333;
+}
+.hero-content > p:not(.welcome-text){
+max-width: 650px;
+margin: 0 auto 30px;
+font-size: 18px;
+line-height: 1.6;
+}
+.hero-button{
+    display: inline-block;
+    background-color: #ff7f50;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+.hero-button:hover{
+    background-color: #e9693f;
+}
+.activities {
+    padding: 80px 60px;
+    text-align: center;
+    background-image: url("image2.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.section-heading >p:first-child{
+    color:#ff7f50;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+.section-heading h2{
+    font-size:36px;
+    margin:10px 0;
+}
+.section-heading >p:last-child{
+    max-width:600px;
+    margin:0 auto 40px;
+line-height:1.6;
+}
+.activity-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+.activity-card{
+    width:280px;
+    padding:30px 20px;
+    background-color:#fff5ee;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+.activity-card h3{
+    margin-top:0;
+    font-size:22px;
+}
+.activity-card:hover{
+    transform:translateY(-5px);
+}
+.about {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 70px;
+    background-color: #fff5ee;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 30px;
+    display: block;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.about-content {
+    flex: 1;
+    max-width: 550px;
+}
+
+.section-label {
+    color: #ff7f50;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.about-content h2 {
+    font-size: 38px;
+    margin: 10px 0 20px;
+    color: #333333;
+}
+.about-content p {
+    line-height: 1.7;
+    font-size: 17px;
+}
+.about-content ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+.about-content li {
+    background-color: white;
+    padding: 12px 18px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+.about-content li::before {
+    content: "✓";
+    color: #ff7f50;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.programs {
+    border-radius: 15px;
+    min-height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 250px;
+    background-image: url("image4.png");
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+}
+.programs-content {
+    max-width: 500px;
+    text-align: center;
+}
+.programs-content h2 {
+    font-size: 38px;
+    margin: 10px 0 20px;
+}
+.programs-content p {
+    line-height: 1.6px;
+}
+footer {
+    background-color: #ff7f50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+}
+    </style>
+    
+</head>
+<body>
+    
+    
+    <header>
+        <h1>Kids Studio</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#activities">Activities</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+
+    <div class="hero-content">
+
+        <p class="welcome-text">WELCOME TO KIDS STUDIO</p>
+
+        <h2>Where Kids Learn, Create & Have Fun!</h2>
+
+        <p>
+            A fun and creative place where children can explore
+            their imagination, learn new skills and enjoy exciting activities.
+        </p>
+
+        <a href="#activities" class="hero-button">Explore Activities</a>
+
+    </div>
+    <div class ="hero-image">
+        <img src="kids-hero.png" alt="Kids enjoying creative activities">
+    </div>
+
+</section>
+    </main>
+    <section class ="activities" id="activities">
+        <div class="section-heading">
+            <p>WHAT WE DO</p>
+            <h2>Fun Activities for Kids</h2>
+            <p>Explore fun activities that help kids learn,create and enjoy.</p>
+        </div>
+        <div class ="activity-container">
+            <div class="activity-card">
+                <h3>Art & Craft</h3>
+                <p>Draw,create and turn creative ideas into something special.</p>
+            </div>
+            <div class = "activity-card">
+                <h3>Music</h3>
+                <p>Discover rhythm and sounds and the joy of making music.</p>
+            </div>
+            <div class="activity-card">
+                <h3>Storytelling</h3>
+                <p>Enjoy interesting stories and explore exciting adventures.</p>
+            </div>
+        </div>
+        <section class="about" id="about">
+
+    <div class="about-image">
+        <img src="image3.png" alt="Children enjoying creative activities">
+    </div>
+
+    <div class="about-content">
+
+        <p class="section-label">ABOUT US</p>
+
+        <h2>Learning Should Always Be Fun!</h2>
+
+        <p>
+            <i>Kids Studio is a friendly space where children can
+            learn new skills, discover their creativity and make
+            wonderful memories.</i>
+        </p>
+
+        <ul>
+            <li>Creative learning activities</li>
+            <li>Fun and friendly environment</li>
+            <li>Activities for curious young minds</li>
+        </ul>
+
+    </div>
+    <section class="programs" id="programs">
+
+    <div class="programs-content">
+
+        <p class="section-label">OUR PROGRAMS</p>
+
+        <h2>Learn, Create & Explore!</h2>
+
+        <p>
+            Our programs help kids discover new skills,
+            explore their creativity and learn through fun activities.
+        </p>
+
+        <a href="#" class="hero-button">Explore Programs</a>
+
+    </div>
+    
+
+</section>
+
+</section>
+</section>  
+    <footer>
+        <p>©️2026 Kids Studio</p>
+    </footer>
+    
+</body>
+</html>
